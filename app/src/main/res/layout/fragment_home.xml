@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.foodie.fragemnt.HomeFragment">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.allure.lbanners.LMBanners
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:id="@+id/banners"
+    app:canLoop="true"
+    app:isVertical="false"
+    app:auto_play="true"
+    app:durtion="5000"
+    app:scroll_duration="66666"
+    app:indicator_select="@drawable/page_indicator_select"
+    app:indicator_unselect="@drawable/page_indicator_unselect"
+    app:horizontal_transitionEffect="accordion"
+    app:indicator_position="bottom_mid"></com.allure.lbanners.LMBanners>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/map"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成都"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+    <SearchView
+    android:id="@+id/searchView"
+    android:layout_weight="9"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/back_shape_grade"
+    ></SearchView>
+    <TextView
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

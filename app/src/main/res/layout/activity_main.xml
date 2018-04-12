@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hjm="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodie.MainActivity"
+    android:orientation="vertical">
+
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottom_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        hjm:tab_selected_color="#fc5f95"
+        hjm:tab_img_height="26dp"
+        hjm:tab_img_width="26dp"
+        hjm:tab_font_size="4dp"
+        hjm:tab_img_font_padding="1dp"
+        hjm:tab_padding_top="6dp"
+        hjm:tab_unselected_color="#8d8d8d">
+    </com.hjm.bottomtabbar.BottomTabBar>
+</LinearLayout>
