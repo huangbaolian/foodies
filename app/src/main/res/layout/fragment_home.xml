@@ -26,8 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="30dp"
+        >
         <LinearLayout
+            android:id="@+id/mapLocation"
             android:layout_weight="0.5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,30 +44,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="成都"
-                android:textColor="#fff"
+                android:textColor="@color/grid_bg"
                 android:textSize="16dp"
                 android:layout_gravity="center_vertical"/>
         </LinearLayout>
 
-
-    <SearchView
-    android:id="@+id/searchView"
-    android:layout_weight="9"
-    android:layout_width="wrap_content"
-    android:layout_height="30dp"
-    android:layout_gravity="center_vertical"
-    android:background="@drawable/back_shape_grade"
-    ></SearchView>
-    <TextView
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:background="@drawable/back_shape_grade"/>
+    <ImageView
+        android:id="@+id/saoErw"
         android:layout_weight="0.5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="搜索"
+        android:layout_width="8dp"
+        android:layout_height="22dp"
         android:textSize="16dp"
-        android:textColor="#fff"
+        android:background="@mipmap/erweima"
         android:gravity="center_horizontal"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"/>
     </LinearLayout>
     </RelativeLayout>
 

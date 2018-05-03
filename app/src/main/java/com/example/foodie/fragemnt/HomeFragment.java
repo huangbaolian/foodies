@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.SearchView;
 
 import com.allure.lbanners.LMBanners;
@@ -27,7 +28,7 @@ public class HomeFragment extends Fragment {
     @InjectView(R.id.banners)
     LMBanners banners;
     @InjectView(R.id.searchView)
-    SearchView searchView;
+    SearchView editText;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -44,7 +45,6 @@ public class HomeFragment extends Fragment {
         list.add(R.mipmap.banner1);
         list.add(R.mipmap.banner2);
         list.add(R.mipmap.banner3);
-        list.add(R.mipmap.banner4);
         banners.setAdapter(new LocalImgAdapter(getActivity()), list);
         init();
         return view;

@@ -1,11 +1,9 @@
-package com.example.foodie;
+package com.example.foodie.activity;
 
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.WindowManager;
 
+import com.example.foodie.R;
 import com.example.foodie.fragemnt.HomeFragment;
 import com.example.foodie.fragemnt.PersoncenterFragment;
 import com.example.foodie.fragemnt.SchoolFragment;
@@ -23,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //判断SDK版本是否大于等于4.4  因为该属性只有19版本才能设置
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
-            WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
-            localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
-                    localLayoutParams.flags);
-        }
+
         ButterKnife.inject(this);
         bottomTabBar.init(getSupportFragmentManager())
                 .addTabItem("首页",R.mipmap.home_off, HomeFragment.class)

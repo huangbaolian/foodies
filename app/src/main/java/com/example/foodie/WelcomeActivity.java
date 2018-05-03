@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.example.foodie.activity.MainActivity;
+
 import java.util.ArrayList;
 
 import butterknife.ButterKnife;

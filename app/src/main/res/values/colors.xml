@@ -7,4 +7,5 @@
     <color name="text_blue">#576D8D</color>
     <color name="text_gray">#201f1f</color>
     <color name="transparent">#00be0000</color>
+    <color name="grid_bg">#2c2c2c</color>
 </resources>
